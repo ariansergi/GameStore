@@ -1,0 +1,31 @@
+GET http://localhost:5158/games
+
+
+### Get a game by id
+GET http://localhost:5158/games/3
+
+### Create a game
+POST http://localhost:5158/games
+Content-Type: application/json
+
+{
+    "name" : "Minecraft three",
+    "genreId" : 4,
+    "price": 20.0,
+    "releaseDate": "2020-01-01"
+}
+
+### Update a game
+PUT http://localhost:5158/games/7
+Content-Type: application/json
+
+{
+    "name" : "Minecraft",
+    "genre" : "Survival",
+    "price": 25.0,
+    "releaseDate": "2020-01-01"
+}
+
+
+### Delete a game
+DELETE http://localhost:5158/games/3
